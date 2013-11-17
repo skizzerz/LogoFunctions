@@ -19,6 +19,7 @@ $messages = array();
 $messages['en'] = array(
 	'logofunctions-desc' => "Add parser function about wiki's logo",
 	'logofunctions-filenotexist' => 'Error: [[File:$1]] does not exist',
+	'logofunctions-badstamptype' => 'Error: Logo stamps only support .png, .jpg, or .gif files: $1',
 );
 
 /** Message documentation (Message documentation)
