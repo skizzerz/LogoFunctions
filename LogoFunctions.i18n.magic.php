@@ -9,4 +9,5 @@ $magicWords = array();
 $magicWords['en'] = array(
 	'getlogo' => array( 0, 'getlogo' ),
 	'setlogo' => array( 0, 'setlogo' ),
+	'stamplogo' => array( 0, 'stamplogo' ),
 );
