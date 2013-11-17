@@ -27,13 +27,15 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'logofunctions-desc' => '{{desc|name=Logo Functions|url=http://www.mediawiki.org/wiki/Extension:LogoFunctions}}',
+	'logofunctions-filenotexist' => 'Used as error message. Parameters:
+* $1 - filename of the logo',
 );
 
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
 $messages['af'] = array(
-	'logofunctions-desc' => "Maak 'n ontleder-funksie beskikbaar om die logo van die wiki te stel",
+	'logofunctions-desc' => "Maak 'n ontleder-funksie beskikbaar om die logo van die wiki te stel", # Fuzzy
 	'logofunctions-filenotexist' => 'Fout: [[File:$1]] bestaan nie',
 );
 
@@ -208,11 +210,12 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
 	'logofunctions-desc' => 'ウィキのロゴに関するパーサー関数を追加する',
-	'logofunctions-filenotexist' => 'エラー：[[File:$1]]は存在しません',
+	'logofunctions-filenotexist' => 'エラー: [[File:$1]] は存在しません',
 );
 
 /** Georgian (ქართული)
@@ -272,7 +275,14 @@ $messages['ms'] = array(
 	'logofunctions-filenotexist' => 'Ralat: [[File:$1]] tidak wujud',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Neapolitan (Nnapulitano)
+ * @author Chelin
+ */
+$messages['nap'] = array(
+	'logofunctions-filenotexist' => 'Errore: [[File:$1]] nun esiste',
+);
+
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -286,6 +296,14 @@ $messages['nb'] = array(
 $messages['nl'] = array(
 	'logofunctions-desc' => 'Voegt een parserfunctie toe om het logo van de wiki in te stellen',
 	'logofunctions-filenotexist' => 'Fout: [[File:$1]] bestaat niet',
+);
+
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'logofunctions-desc' => 'Apond una foncion al parser per definir lo lògo del wiki',
+	'logofunctions-filenotexist' => 'Error : [[File:$1]] existís pas',
 );
 
 /** Polish (polski)
@@ -404,14 +422,19 @@ $messages['vi'] = array(
 	'logofunctions-filenotexist' => 'Lỗi: [[File:$1]] không tồn tại',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
 $messages['zh-hans'] = array(
+	'logofunctions-desc' => '添加解析器函数，有关wiki的标志',
 	'logofunctions-filenotexist' => '错误：[[File:$1]] 不存在',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
+	'logofunctions-desc' => '添加維基標識的解析器函數',
 	'logofunctions-filenotexist' => '錯誤：[[File:$1]] 不存在',
 );
