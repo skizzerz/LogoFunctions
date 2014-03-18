@@ -188,7 +188,7 @@ function efStampLogo_Render( $parser, $logo = '', $offx = 0, $offy = 0, $canvx =
 	imagecopy( $new_canvas, $new, $offx, $offy, 0, 0, imagesx( $new ), imagesy( $new ) );
 
 	imagecopy( $old_canvas, $new_canvas, 0, 0, 0, 0, $canvas_x, $canvas_y );
-	$egLogoFunctionsChain .= '##' . $logo;
+	$egLogoFunctionsChain .= '##' . $logo . '#' . $offx . '#' . $offy . '#' . $canvx . '#' . $canvy;
 	$egLogoFunctionsPrev = $wgUploadDirectory . DIRECTORY_SEPARATOR . 'logos' . DIRECTORY_SEPARATOR . md5( $egLogoFunctionsChain ) . '.png';
 	imagepng( $old_canvas, $egLogoFunctionsPrev );
 
@@ -224,7 +224,7 @@ function efSetLogo_Render( $parser, $logo = '', $width = 135, $height = 135 ) {
 	$egLogoFunctionsLogo = $wgLogo;
 	
 	$egLogoFunctionsPrev = $wgUploadDirectory . substr( $thumb->getUrl(), strlen( $wgUploadPath ) );
-	$egLogoFunctionsChain = $egLogoFunctionsPrev;
+	$egLogoFunctionsChain = $egLogoFunctionsPrev . '#' . $width . '#' . $height;
 }
 
 function efGetLogo_Render( $parser, $prefix = false ) {
