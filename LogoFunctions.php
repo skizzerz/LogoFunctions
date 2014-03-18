@@ -141,11 +141,11 @@ function efStampLogo_Render( $parser, $logo = '', $offx = 0, $offy = 0, $canvx =
 		);
 	}
 
-	// hackery follows, ensure that each image (old and new) are on a 135x135 transparent canvas
+	// hackery follows, ensure that each image (old and new) are on a 154x155 transparent canvas
 	$canvx = ( is_numeric( $canvx ) && $canvx > 0 ) ? $canvx : 0;
 	$canvy = ( is_numeric( $canvy ) && $canvy > 0 ) ? $canvy : 0;
-	$canvas_x = max( imagesx( $old ), $canvx, 135 );
-	$canvas_y = max( imagesy( $old ), $canvy, 135 );
+	$canvas_x = max( imagesx( $old ), $canvx, 154 );
+	$canvas_y = max( imagesy( $old ), $canvy, 155 );
 	$old_canvas = imagecreatetruecolor( $canvas_x, $canvas_y );
 	$t1 = imagecolorallocatealpha( $old_canvas, 0, 0, 0, 127 );
 	imagefill( $old_canvas, 0, 0, $t1 );
@@ -204,7 +204,7 @@ function efStampLogo_Render( $parser, $logo = '', $offx = 0, $offy = 0, $canvx =
 }
 
 
-function efSetLogo_Render( $parser, $logo = '', $width = 135, $height = 135 ) {
+function efSetLogo_Render( $parser, $logo = '', $width = 154, $height = 155 ) {
 	global $wgLogo, $wgUploadPath, $wgUploadDirectory;
 	global $egLogoFunctionsPrev, $egLogoFunctionsChain, $egLogoFunctionsLogo;
 	$imageobj = wfFindFile( $logo );
@@ -214,8 +214,8 @@ function efSetLogo_Render( $parser, $logo = '', $width = 135, $height = 135 ) {
 		);
 	}
 	$thumb_arr = array(
-		'width' => ( is_numeric( $width ) && $width > 0 ) ? $width : 135,
-		'height' => ( is_numeric( $height ) && $height > 0 ) ? $height : 135
+		'width' => ( is_numeric( $width ) && $width > 0 ) ? $width : 154,
+		'height' => ( is_numeric( $height ) && $height > 0 ) ? $height : 155
 	);
 	$thumb = $imageobj->transform( $thumb_arr, File::RENDER_NOW );
 	
