@@ -26,7 +26,7 @@ $wgExtensionCredits[ 'parserhook' ][] = array(
 	'author'         => array( 'Devunt (Bae June Hyeon)', 'Ryan Schmidt' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:LogoFunctions',
 	'descriptionmsg' => 'logofunctions-desc',
-	'version'        => '0.10.3',
+	'version'        => '0.10.4',
 );
 
 $dir = dirname( __FILE__ ) . '/';
